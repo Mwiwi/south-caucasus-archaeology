@@ -1,0 +1,22 @@
+{
+  "title": "South Caucasus Open Archaeology Initiative (SCOAI): Radiocarbon Normalization, Epigraphy, and Spatial Dataset Toolkit",
+  "upload_type": "software",
+  "description": "Open-source computational archaeology toolkit and geocoded dataset (GeoJSON, Pelagios Linked Places JSON-LD, and XRONOS 14C tables) for the South Caucasus, featuring Ward & Wilson (1978) chi-squared chronometric verification, stratigraphic superposition self-correction workflows, IntCal20 calibration, Asomtavruli/Nuskhuri epigraphic transliteration, and the CaucasusArch-Bench evaluation suite.",
+  "creators": [
+    {
+      "name": "Ker, Willi",
+      "affiliation": "South Caucasus Open Archaeology Initiative (Tbilisi, Georgia)"
+    }
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "computational archaeology",
+    "south caucasus",
+    "radiocarbon calibration",
+    "xronos",
+    "pelagios",
+    "asomtavruli epigraphy",
+    "geojson"
+  ]
+}
