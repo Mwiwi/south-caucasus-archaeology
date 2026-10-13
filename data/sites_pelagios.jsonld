@@ -1,0 +1,842 @@
+{
+  "@context": "https://raw.githubusercontent.com/LinkedPasts/linked-places/master/linkedplaces-context-v1.1.jsonld",
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-DMN-001",
+      "type": "Feature",
+      "properties": {
+        "title": "Dmanisi Hominin Site",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Lower Paleolithic (Oldowan / Mode 1)",
+        "chronology": "1,850,000 - 1,770,000 BP"
+      },
+      "names": [
+        {
+          "toponym": "Dmanisi Hominin Site",
+          "lang": "en"
+        },
+        {
+          "toponym": "დმანისის ნაქალაქარი",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.2036,
+          41.3322
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Earliest securely dated hominin fossils outside Africa (Homo georgicus, Skulls 1-5)",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "Georgian National Museum Archives"
+        },
+        {
+          "label": "GNAS Paleolithic Reports (Lordkipanidze et al.)"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-ORZ-002",
+      "type": "Feature",
+      "properties": {
+        "title": "Orozmani Lower Paleolithic Site",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Lower Paleolithic (Oldowan)",
+        "chronology": "1,820,000 - 1,770,000 BP"
+      },
+      "names": [
+        {
+          "toponym": "Orozmani Lower Paleolithic Site",
+          "lang": "en"
+        },
+        {
+          "toponym": "ოროზმანი",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.1425,
+          41.3189
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Second Early Pleistocene hominin tooth and Oldowan lithic assemblage in the Mashavera basin",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "Georgian National Museum Orozmani Expedition (2021-2024)"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-DZU-003",
+      "type": "Feature",
+      "properties": {
+        "title": "Dzudzuana Cave",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Upper Paleolithic",
+        "chronology": "32,000 - 11,000 cal BCE"
+      },
+      "names": [
+        {
+          "toponym": "Dzudzuana Cave",
+          "lang": "en"
+        },
+        {
+          "toponym": "ძუძუანას მღვიმე",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.3172,
+          42.3136
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Oldest known spun and dyed wild flax fibers (~34,000 cal BP) and ancient Caucasian paleogenomes",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "Georgian National Museum"
+        },
+        {
+          "label": "Bar-Yosef, Belfer-Cohen & Meshveliani Cave Reports"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-ORT-004",
+      "type": "Feature",
+      "properties": {
+        "title": "Ortvale Klde Rockshelter",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Middle to Upper Paleolithic Transition",
+        "chronology": "43,000 - 26,000 cal BCE"
+      },
+      "names": [
+        {
+          "toponym": "Ortvale Klde Rockshelter",
+          "lang": "en"
+        },
+        {
+          "toponym": "ორთვალა კლდე",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.2856,
+          42.3019
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Benchmark stratigraphic sequence for the Neanderthal to Homo sapiens transition in the South Caucasus",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "N. Tushabramishvili & D.S. Adler Stratigraphic Reports"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-GAD-005",
+      "type": "Feature",
+      "properties": {
+        "title": "Gadachrili Gora",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Early Neolithic (Shulaveri-Shomu Culture)",
+        "chronology": "5980 - 5750 cal BCE"
+      },
+      "names": [
+        {
+          "toponym": "Gadachrili Gora",
+          "lang": "en"
+        },
+        {
+          "toponym": "გადაჭრილი გორა",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.8194,
+          41.4831
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Earliest biomolecular evidence of Vitis vinifera viniculture and Neolithic wine jars (~6000 BCE)",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "Georgian National Museum Archives"
+        },
+        {
+          "label": "PNAS 2017 Tartaric Acid Residue Catalog (McGovern et al.)"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-SHU-006",
+      "type": "Feature",
+      "properties": {
+        "title": "Shulaveris Gora",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Early Neolithic (Shulaveri-Shomu Type-Site)",
+        "chronology": "6000 - 5500 cal BCE"
+      },
+      "names": [
+        {
+          "toponym": "Shulaveris Gora",
+          "lang": "en"
+        },
+        {
+          "toponym": "შულავერის გორა",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.8236,
+          41.4789
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Eponymous tell settlement of the Shulaveri-Shomu Neolithic complex with circular mudbrick architecture and obsidian blades",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "O. Japaridze & A. Javakhishvili Kvemo Kartli Expedition Reports (1965-1971)"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-KDG-007",
+      "type": "Feature",
+      "properties": {
+        "title": "Khramis Didi-Gora",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Early Neolithic (Shulaveri-Shomu Culture)",
+        "chronology": "5850 - 5400 cal BCE"
+      },
+      "names": [
+        {
+          "toponym": "Khramis Didi-Gora",
+          "lang": "en"
+        },
+        {
+          "toponym": "ხრამის დიდი გორა",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.9122,
+          41.3911
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Large Neolithic tell yielding anthropomorphic clay figurines and tartaric acid wine residues",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "Georgian State Museum Kvemo Kartli Monograph Series"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-ARU-008",
+      "type": "Feature",
+      "properties": {
+        "title": "Arukhlo I Tell",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Early Neolithic (Shulaveri-Shomu Culture)",
+        "chronology": "5800 - 5350 cal BCE"
+      },
+      "names": [
+        {
+          "toponym": "Arukhlo I Tell",
+          "lang": "en"
+        },
+        {
+          "toponym": "არუხლოს გორა",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.6714,
+          41.4561
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Neolithic settlement encircled by monumental concentric ditches and Transcaucasian obsidian workshops",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "T. Chubinishvili Archives"
+        },
+        {
+          "label": "DAI Eurasia Department & GNM Joint Reports (Hansen et al.)"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-SAK-009",
+      "type": "Feature",
+      "properties": {
+        "title": "Sakdrisi-Kachagiani Prehistoric Gold Mine",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Early Bronze Age (Kura-Araxes Culture)",
+        "chronology": "3350 - 2900 cal BCE"
+      },
+      "names": [
+        {
+          "toponym": "Sakdrisi-Kachagiani Prehistoric Gold Mine",
+          "lang": "en"
+        },
+        {
+          "toponym": "საყდრისი-ყაჩაღიანი",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.4178,
+          41.4367
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Earliest known underground hard-rock gold mining complex using fire-setting and stone pounding tools",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "Georgian-German Mining Archaeology Reports (Stöllner & Gambashidze)"
+        },
+        {
+          "label": "GNM Metallurgy Collection"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-KVA-010",
+      "type": "Feature",
+      "properties": {
+        "title": "Kvatskhelebi Settlement",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Early Bronze Age (Kura-Araxes Culture)",
+        "chronology": "3100 - 2700 cal BCE"
+      },
+      "names": [
+        {
+          "toponym": "Kvatskhelebi Settlement",
+          "lang": "en"
+        },
+        {
+          "toponym": "ქვაცხელები",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0322,
+          42.0258
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Exceptionally preserved burned Kura-Araxes village with intact ritual hearths and red-black burnished ware",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "A. Javakhishvili & L. Glonti Urbnisi-Kvatskhelebi Reports (1962)"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-BER-011",
+      "type": "Feature",
+      "properties": {
+        "title": "Berikldeebi Sanctuary & Settlement",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Late Chalcolithic to Middle Bronze Age",
+        "chronology": "3800 - 2000 cal BCE"
+      },
+      "names": [
+        {
+          "toponym": "Berikldeebi Sanctuary & Settlement",
+          "lang": "en"
+        },
+        {
+          "toponym": "ბერიკლდეები",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.9389,
+          42.0431
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Stratified cult center at the confluence of the Kura and Prone rivers bridging Chalcolithic, Kura-Araxes, and Bedeni horizons",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "A. Javakhishvili Berikldeebi Excavation Archives"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-BED-012",
+      "type": "Feature",
+      "properties": {
+        "title": "Bedeni Plateau Kurgan Necropolis",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Early Kurgan Period (Bedeni Culture)",
+        "chronology": "2500 - 2200 cal BCE"
+      },
+      "names": [
+        {
+          "toponym": "Bedeni Plateau Kurgan Necropolis",
+          "lang": "en"
+        },
+        {
+          "toponym": "ბედენის ყურგანები",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.4158,
+          41.5514
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Monumental timber-chambered kurgans containing four-wheeled wooden wagons, textiles, and early arsenical bronzes",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "G. Gobedjishvili Bedeni Monograph (1980)"
+        },
+        {
+          "label": "Georgian National Museum"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-ANA-013",
+      "type": "Feature",
+      "properties": {
+        "title": "Ananauri Big Kurgan No. 3",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Early Kurgan Period (Bedeni Horizon)",
+        "chronology": "2450 - 2250 cal BCE"
+      },
+      "names": [
+        {
+          "toponym": "Ananauri Big Kurgan No. 3",
+          "lang": "en"
+        },
+        {
+          "toponym": "ანანაურის დიდი ყურგანი №3",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.2144,
+          41.8022
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Unlooted monumental kurgan yielding two four-wheeled wooden wagons, amber beads, and gold jewelry",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "Z. Makharadze & GNM Kakheti Kurgan Expedition Reports (2012-2016)"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-TRI-014",
+      "type": "Feature",
+      "properties": {
+        "title": "Trialeti Barrow Cluster (Tsalka Plateau)",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Middle Bronze Age (Trialeti-Vanadzor Culture)",
+        "chronology": "2100 - 1500 cal BCE"
+      },
+      "names": [
+        {
+          "toponym": "Trialeti Barrow Cluster (Tsalka Plateau)",
+          "lang": "en"
+        },
+        {
+          "toponym": "თრიალეთის ყურგანები",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0891,
+          41.5983
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Elite kurgans with stone causeways and world-renowned silver and gold repoussé goblets",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "B.A. Kuftin Field Archives (1936-1941)"
+        },
+        {
+          "label": "Georgian National Museum Treasury"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-GRA-015",
+      "type": "Feature",
+      "properties": {
+        "title": "Grakliani Hill Sanctuary & Settlement",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Late Bronze / Early Iron Age to Hellenistic",
+        "chronology": "1100 - 300 cal BCE"
+      },
+      "names": [
+        {
+          "toponym": "Grakliani Hill Sanctuary & Settlement",
+          "lang": "en"
+        },
+        {
+          "toponym": "გრაკლიანი გორა",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.3089,
+          41.9764
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Multi-layered sanctuary featuring a unique Early Iron Age autochthonous script on a temple altar pedestal",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "Tbilisi State University Institute of Archaeology (V. Licheli Reports)"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-VAN-016",
+      "type": "Feature",
+      "properties": {
+        "title": "Vani Sanctuary & City Site",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Late Bronze / Classical Colchian & Hellenistic",
+        "chronology": "800 - 50 BCE"
+      },
+      "names": [
+        {
+          "toponym": "Vani Sanctuary & City Site",
+          "lang": "en"
+        },
+        {
+          "toponym": "ვანის ნაქალაქარი",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.5028,
+          42.0856
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Major religious and metallurgical center of ancient Colchis with rich granulation goldwork and bronze foundry",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "O. Lordkipanidze Vani Expedition Archives"
+        },
+        {
+          "label": "D. Kacharava GNM Reports"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-UPL-017",
+      "type": "Feature",
+      "properties": {
+        "title": "Uplistsikhe Rock-Hewn City",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Early Iron Age to Late Antique Iberia",
+        "chronology": "1000 BCE - 500 CE"
+      },
+      "names": [
+        {
+          "toponym": "Uplistsikhe Rock-Hewn City",
+          "lang": "en"
+        },
+        {
+          "toponym": "უფლისციხე",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.2075,
+          41.9672
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Rock-cut cultic and urban center of ancient Kartli (Iberia) overlooking the Kura River",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "D. Khakhutaishvili Uplistsikhe Monographs"
+        },
+        {
+          "label": "Georgian National Museum"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-ARM-018",
+      "type": "Feature",
+      "properties": {
+        "title": "Armazi Citadel (Bagineti) & Necropolis",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Hellenistic / Early Iberian & Late Antique",
+        "chronology": "300 BCE - 400 CE"
+      },
+      "names": [
+        {
+          "toponym": "Armazi Citadel (Bagineti) & Necropolis",
+          "lang": "en"
+        },
+        {
+          "toponym": "არმაზციხე (ბაგინეთი)",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.7219,
+          41.8364
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Royal acropolis of Iberia and discovery locus of the Armazi Bilingual (key to deciphering the Armazic script)",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "Mtskheta Archaeological Institute Reports"
+        },
+        {
+          "label": "G. Tsereteli Epigraphic Archive"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-BOL-019",
+      "type": "Feature",
+      "properties": {
+        "title": "Bolnisi Sioni Basilica (Epigraphic Locus)",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Late Antique / Early Christian Kartli",
+        "chronology": "478 - 493 CE"
+      },
+      "names": [
+        {
+          "toponym": "Bolnisi Sioni Basilica (Epigraphic Locus)",
+          "lang": "en"
+        },
+        {
+          "toponym": "ბოლნისის სიონი",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.5128,
+          41.3889
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Oldest securely dated surviving Old Georgian Asomtavruli stone inscriptions in Georgia (late 5th century CE)",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "Corpus Inscriptionum Georgicarum (Lapidary Inscriptions, Vol. I)"
+        },
+        {
+          "label": "K. Kekelidze Institute of Manuscripts"
+        }
+      ]
+    },
+    {
+      "@id": "https://github.com/Mwiwi/south-caucasus-archaeology/sites/GEO-JVR-020",
+      "type": "Feature",
+      "properties": {
+        "title": "Mtskheta Jvari Monastery Reliefs",
+        "ccodes": [
+          "GE"
+        ],
+        "period": "Early Medieval Kartli (Erismtavari Period)",
+        "chronology": "586 - 605 CE"
+      },
+      "names": [
+        {
+          "toponym": "Mtskheta Jvari Monastery Reliefs",
+          "lang": "en"
+        },
+        {
+          "toponym": "მცხეთის ჯვრის მონასტერი",
+          "lang": "ka"
+        }
+      ],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.7333,
+          41.8383
+        ]
+      },
+      "descriptions": [
+        {
+          "value": "Monumental facade reliefs with benchmark Asomtavruli inscriptions naming Stephanos Patricius and Demetre Hypatos",
+          "lang": "en"
+        }
+      ],
+      "citations": [
+        {
+          "label": "Corpus Inscriptionum Georgicarum"
+        },
+        {
+          "label": "G. Chubinashvili History of Georgian Architecture"
+        }
+      ]
+    }
+  ]
+}

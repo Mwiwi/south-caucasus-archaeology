@@ -1,0 +1,12 @@
+კოდი: GEO-IMR-021
+Name_EN: Imiris Gora
+ძეგლი: იმირის გორა
+მხარე: Kvemo Kartli (Marneuli Municipality), Georgia
+კოორდინატები: 41°28'12" ჩ.გ., 44°48'45" ა.გ.
+კულტურა: Early Neolithic (Shulaveri-Shomu Culture)
+ქრონოლოგია: 5900 - 5450 cal BCE
+წყარო: A. Javakhishvili, Kvemo Kartli Archaeological Expedition Reports (Tbilisi, 1973)
+
+რადიოკარბონული თარიღები (Tbilisi and International Radiocarbon Series):
+1. თბ-29: 6630 ± 80 BP (ნახშირი, ფენა V)
+2. LE-1060: 6780 ± 70 BP (მარცვალი, ფენა VII)

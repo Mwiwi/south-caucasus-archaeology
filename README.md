@@ -8,36 +8,92 @@
 
 ## Overview
 
-The **South Caucasus Open Archaeology Initiative (SCOAI)** is an independent, non-commercial computational research project dedicated to digitizing, standardizing, and synthesizing archaeological, paleoenvironmental, and epigraphic records across Georgia and the broader South Caucasus region.
+The **South Caucasus Open Archaeology Initiative (SCOAI)** is an independent, non-commercial computational research project dedicated to digitizing, standardizing, and synthesizing archaeological, chronometric ($^{14}\text{C}$), paleoenvironmental, and epigraphic records across Georgia and the broader South Caucasus region.
 
-A vast amount of critical archaeological data from the South Caucasus—spanning Early Pleistocene hominin dispersals, Neolithic viticulture, Bronze Age metallurgy, and classical antiquity—remains locked in unindexed, multi-lingual archival publications (Georgian, Russian, German, and English) and fragmented museum catalogs. This project develops open-source data schemas, multimodal extraction workflows, and geocoded datasets to bridge archival literature with modern spatial analysis.
+Critical archaeological and chronometric data from the South Caucasus—spanning Early Pleistocene hominin dispersals (Dmanisi, Orozmani), Neolithic viniculture (Shulaveri-Shomu), Bronze Age metallurgy and kurgan horizons (Kura-Araxes, Bedeni, Trialeti, Colchis), and ancient epigraphy (*Asomtavruli*, *Armazic Aramaic*, Greek)—remain fragmented across unindexed Georgian and historical archival monographs. Because legacy laboratory radiocarbon records (e.g., Tbilisi `Tb-` / `თბ-` and `LE-` series), stratigraphic tables, and historical DMS coordinates lack standardized digitization, the South Caucasus remains underrepresented in global open-science repositories such as **XRONOS** and **Pleiades / Pelagios**.
+
+This repository provides an open-source Python normalization toolkit (`scoai`) and geocoded datasets bridging Caucasian archival literature with international Linked Open Data standards.
+
+---
 
 ## Key Research Domains
 
-1. **Early Pleistocene Hominin Dispersals:** Aggregating stratigraphic, faunal, and paleoenvironmental metadata around Lower Paleolithic sites in Kvemo Kartli and Javakheti (e.g., Dmanisi, Orozmani).
-2. **Neolithic Viticulture & Agrarian Settlements:** Mapping ceramic, archaeobotanical, and radiocarbon ($^{14}\text{C}$) records across Shulaveri-Shomu culture settlements (e.g., Gadachrili Gora, Khramis Didi-Gora, Shulaveris Gora).
-3. **Metallurgy & Bronze Age Networks:** Structuring artifact typologies, radiocarbon chronologies, and spatial distributions across Kura-Araxes, Trialeti, and Colchian cultural complexes (e.g., Sakdrisi-Kachagiani, Trialeti kurgans, Vani).
-4. **Epigraphy & Archival Digitization:** Cross-lingual optical character recognition (OCR) and structured entity extraction for legacy archaeological reports and ancient epigraphic monuments (Armazic/Aramaic, Greek, and early Georgian Asomtavruli inscriptions).
+1. **Early Pleistocene & Paleolithic Dispersals:** Aggregating stratigraphic, radiometric, and paleoenvironmental metadata across Lower, Middle, and Upper Paleolithic sites in Kvemo Kartli and Imereti (*Dmanisi*, *Orozmani*, *Dzudzuana Cave*, *Ortvale Klde*).
+2. **Neolithic Viniculture & Agrarian Tells:** Mapping ceramic, archaeobotanical, and $^{14}\text{C}$ records across Shulaveri-Shomu culture settlements (*Gadachrili Gora*, *Shulaveris Gora*, *Khramis Didi-Gora*, *Arukhlo I*, *Imiris Gora*).
+3. **Metallurgy & Bronze Age Kurgan Networks:** Structuring chronologies and spatial distributions across Kura-Araxes, Bedeni, Trialeti, and Colchian cultural complexes (*Sakdrisi-Kachagiani*, *Kvatskhelebi*, *Berikldeebi*, *Bedeni*, *Ananauri*, *Trialeti*, *Vani*, *Grakliani Hill*).
+4. **Epigraphy & Script Transliteration:** Cross-lingual optical character recognition (OCR), bidirectional Unicode script conversion (*Asomtavruli* `ႠႱႭႫႧႠႥႰႳႪႨ` $\leftrightarrow$ *Nuskhuri* `ⴀⴑⴍⴋⴇⴀⴅⴐⴓⴊⴈ` $\leftrightarrow$ *Mkhedruli* `ასომთავრული` $\leftrightarrow$ scholarly Kartvelological Latin), and structured cataloging of bilingual monuments (*Bolnisi Sioni*, *Mtskheta Jvari*, *Armazi Bilingual*).
 
-## Methodology & AI Integration
+---
 
-- **Multimodal Document Parsing:** Automated extraction of stratigraphy tables, radiocarbon dates ($^{14}\text{C}$ BP / calibrated BCE), and lithic/ceramic typologies from archival monographs and field reports.
-- **Geospatial Synthesis:** Correlating legacy site coordinates with modern DEM/LiDAR topography and satellite imagery to produce standardized GeoJSON and JSON-LD spatial layers.
-- **Open Science Deliverables:** Releasing open-access, geocoded archaeological datasets and reproducible Python tools for the research community.
+## Architecture & Repository Structure
 
-## Repository Structure
+```text
+south-caucasus-archaeology/
+├── scoai/
+│   ├── schema.py            # Dataclasses & Caucasus WGS84 / 14C validators
+│   ├── radiocarbon.py       # Legacy lab prefix normalizer (თბ->Tb, LE, GIN, RTD) & IntCal20 calibrator
+│   ├── epigraphy.py         # Asomtavruli / Nuskhuri / Mkhedruli converter & scholarly Latin transliterator
+│   ├── archival_parser.py   # Georgian/English archival text & DMS coordinate parser + Gemini 4 Argon schema
+│   ├── catalog.py           # Reference catalog of 20 major archaeological & epigraphic sites across Georgia
+│   └── exporters.py         # GeoJSON, Pelagios Linked Places JSON-LD, XRONOS CSV, and Haversine spatial graph
+├── data/
+│   ├── sites.geojson        # RFC 7946 GeoJSON FeatureCollection (rendered interactively on GitHub)
+│   ├── sites_pelagios.jsonld# Linked Open Data gazetteer compatible with Pleiades / Pelagios / WHG
+│   ├── radiocarbon_xronos.csv # Standardized 14C chronometric table compatible with XRONOS (xronos.ch)
+│   └── raw_samples/         # Sample Georgian/English archival report excerpts
+├── tests/
+│   └── test_scoai.py        # Unit test suite covering 14C calibration, epigraphy, DMS parsing, and exports
+└── pipeline.py              # CLI entrypoint for validation and dataset generation
+```
 
-- `pipeline.py` — Core data models, radiocarbon calibration/normalization schemas, and GeoJSON export pipeline for archaeological site records.
-- `data/sites.geojson` — Standardized open-access geocoded baseline dataset of key reference sites in Georgia (rendered interactively by GitHub).
+---
 
 ## Quick Start
+
+### 1. Run the Normalization & Export Pipeline
 
 ```bash
 python3 pipeline.py
 ```
 
-Running `pipeline.py` validates the site records and regenerates `data/sites.geojson`.
+This validates all 20 reference sites, normalizes and calibrates the radiocarbon series, processes the epigraphic inscriptions, and generates:
+- `data/sites.geojson`
+- `data/sites_pelagios.jsonld`
+- `data/radiocarbon_xronos.csv`
+
+### 2. Run the Automated Test Suite
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
+---
+
+## Example Usage
+
+### Normalizing Legacy Georgian $^{14}\text{C}$ Records
+
+```python
+from scoai.radiocarbon import parse_archival_radiocarbon_line
+
+sample = parse_archival_radiocarbon_line("თბ-312: 6850 ± 70 BP (ნახშირი, ფენა III)")
+print(sample.lab_code)             # "Tb-312"
+print(sample.material)             # "Charcoal"
+print(sample.calibrated_bce_range) # "5900 - 5580 cal BCE"
+```
+
+### Transliterating Ancient Georgian *Asomtavruli* Inscriptions
+
+```python
+from scoai.epigraphy import asomtavruli_to_mkhedruli, transliterate_georgian_to_latin
+
+inscription = "ႵႤ ႣႠႧႳႬႠ ႤႮႨႱႩႭႮႭႱႱႠ"  # Bolnisi Sioni (493-494 CE)
+print(asomtavruli_to_mkhedruli(inscription))        # "ქე დათუნა ეპისკოპოსსა"
+print(transliterate_georgian_to_latin(inscription)) # "ke datuna ep'isk'op'ossa"
+```
+
+---
 
 ## License
 
-Distributed under the MIT License (Code) and CC-BY-4.0 (Datasets) for non-commercial scientific research.
+Distributed under the **MIT License** (Code) and **CC-BY-4.0** (Datasets) for non-commercial scientific research.

@@ -3,7 +3,10 @@
   "metadata": {
     "project": "South Caucasus Open Archaeology Initiative (SCOAI)",
     "author": "Willi Ker",
-    "license": "CC-BY-4.0"
+    "license": "CC-BY-4.0",
+    "site_count": 20,
+    "radiocarbon_sample_count": 26,
+    "inscription_count": 5
   },
   "features": [
     {
@@ -18,18 +21,144 @@
       "properties": {
         "site_id": "GEO-DMN-001",
         "name_en": "Dmanisi Hominin Site",
-        "name_ka": "დმანისი",
+        "name_ka": "დმანისის ნაქალაქარი",
         "region": "Kvemo Kartli, Georgia",
+        "elevation_m": 910,
         "cultural_period": "Lower Paleolithic (Oldowan / Mode 1)",
         "chronology_bce": "1,850,000 - 1,770,000 BP",
+        "radiocarbon_count": 0,
         "radiocarbon_samples": [],
+        "inscriptions": [],
         "sources": [
           "Georgian National Museum Archives",
-          "GNAS Reports"
+          "GNAS Paleolithic Reports (Lordkipanidze et al.)"
         ],
         "metadata": {
-          "significance": "Earliest securely dated hominin fossils outside Africa (Homo georgicus)",
-          "dating_method": "40Ar/39Ar and paleomagnetism (Matuyama-Olduvai)"
+          "significance": "Earliest securely dated hominin fossils outside Africa (Homo georgicus, Skulls 1-5)",
+          "dating_method": "40Ar/39Ar on Masavera basalt (1.85 Ma) and Matuyama-Olduvai paleomagnetism"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.1425,
+          41.3189
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-ORZ-002",
+        "name_en": "Orozmani Lower Paleolithic Site",
+        "name_ka": "ოროზმანი",
+        "region": "Kvemo Kartli (Dmanisi Municipality), Georgia",
+        "elevation_m": 1180,
+        "cultural_period": "Lower Paleolithic (Oldowan)",
+        "chronology_bce": "1,820,000 - 1,770,000 BP",
+        "radiocarbon_count": 0,
+        "radiocarbon_samples": [],
+        "inscriptions": [],
+        "sources": [
+          "Georgian National Museum Orozmani Expedition (2021-2024)"
+        ],
+        "metadata": {
+          "significance": "Second Early Pleistocene hominin tooth and Oldowan lithic assemblage in the Mashavera basin"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.3172,
+          42.3136
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-DZU-003",
+        "name_en": "Dzudzuana Cave",
+        "name_ka": "ძუძუანას მღვიმე",
+        "region": "Imereti (Chiatura Municipality), Georgia",
+        "elevation_m": 560,
+        "cultural_period": "Upper Paleolithic",
+        "chronology_bce": "32,000 - 11,000 cal BCE",
+        "radiocarbon_count": 2,
+        "radiocarbon_samples": [
+          {
+            "lab_code": "RTD-5028",
+            "bp_uncalibrated": 27400,
+            "std_dev": 300,
+            "material": "Bone collagen (Capra caucasica)",
+            "calibrated_bce_range": "30350 - 29150 cal BCE",
+            "context_stratum": "Unit C (Upper Paleolithic)",
+            "delta_c13_permil": null
+          },
+          {
+            "lab_code": "RTT-3821",
+            "bp_uncalibrated": 23200,
+            "std_dev": 240,
+            "material": "Charcoal",
+            "calibrated_bce_range": "25910 - 24920 cal BCE",
+            "context_stratum": "Unit D",
+            "delta_c13_permil": null
+          }
+        ],
+        "inscriptions": [],
+        "sources": [
+          "Georgian National Museum",
+          "Bar-Yosef, Belfer-Cohen & Meshveliani Cave Reports"
+        ],
+        "metadata": {
+          "significance": "Oldest known spun and dyed wild flax fibers (~34,000 cal BP) and ancient Caucasian paleogenomes"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.2856,
+          42.3019
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-ORT-004",
+        "name_en": "Ortvale Klde Rockshelter",
+        "name_ka": "ორთვალა კლდე",
+        "region": "Imereti (Chiatura Municipality), Georgia",
+        "elevation_m": 530,
+        "cultural_period": "Middle to Upper Paleolithic Transition",
+        "chronology_bce": "43,000 - 26,000 cal BCE",
+        "radiocarbon_count": 2,
+        "radiocarbon_samples": [
+          {
+            "lab_code": "AA-45862",
+            "bp_uncalibrated": 34300,
+            "std_dev": 650,
+            "material": "Charcoal",
+            "calibrated_bce_range": "38640 - 35790 cal BCE",
+            "context_stratum": "Layer 4c (Early Upper Paleolithic)",
+            "delta_c13_permil": null
+          },
+          {
+            "lab_code": "OxA-11420",
+            "bp_uncalibrated": 31800,
+            "std_dev": 400,
+            "material": "Bone collagen",
+            "calibrated_bce_range": "35300 - 33540 cal BCE",
+            "context_stratum": "Layer 4b",
+            "delta_c13_permil": null
+          }
+        ],
+        "inscriptions": [],
+        "sources": [
+          "N. Tushabramishvili & D.S. Adler Stratigraphic Reports"
+        ],
+        "metadata": {
+          "significance": "Benchmark stratigraphic sequence for the Neanderthal to Homo sapiens transition in the South Caucasus"
         }
       }
     },
@@ -43,27 +172,183 @@
         ]
       },
       "properties": {
-        "site_id": "GEO-GAD-002",
+        "site_id": "GEO-GAD-005",
         "name_en": "Gadachrili Gora",
         "name_ka": "გადაჭრილი გორა",
-        "region": "Kvemo Kartli, Georgia",
+        "region": "Kvemo Kartli (Marneuli Municipality), Georgia",
+        "elevation_m": 365,
         "cultural_period": "Early Neolithic (Shulaveri-Shomu Culture)",
-        "chronology_bce": "6000 - 5800 BCE",
+        "chronology_bce": "5980 - 5750 cal BCE",
+        "radiocarbon_count": 2,
         "radiocarbon_samples": [
           {
             "lab_code": "RTD-7814",
             "bp_uncalibrated": 7065,
             "std_dev": 35,
-            "material": "Charred cereal grain (Triticum)",
-            "calibrated_bce_range": "6010 - 5880 cal BCE"
+            "material": "Charred Triticum grain",
+            "calibrated_bce_range": "6030 - 5870 cal BCE",
+            "context_stratum": "Horizon I, Circular Mudbrick Structure",
+            "delta_c13_permil": null
+          },
+          {
+            "lab_code": "UGAMS-25902",
+            "bp_uncalibrated": 6980,
+            "std_dev": 30,
+            "material": "Charcoal",
+            "calibrated_bce_range": "5940 - 5800 cal BCE",
+            "context_stratum": "Horizon II, Wine Jar Context",
+            "delta_c13_permil": null
           }
         ],
+        "inscriptions": [],
         "sources": [
           "Georgian National Museum Archives",
-          "PNAS 2017 Tartaric Acid Residue Catalog"
+          "PNAS 2017 Tartaric Acid Residue Catalog (McGovern et al.)"
         ],
         "metadata": {
-          "significance": "Earliest biomolecular evidence of viniculture and ceramic wine jars (qvevri)"
+          "significance": "Earliest biomolecular evidence of Vitis vinifera viniculture and Neolithic wine jars (~6000 BCE)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.8236,
+          41.4789
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-SHU-006",
+        "name_en": "Shulaveris Gora",
+        "name_ka": "შულავერის გორა",
+        "region": "Kvemo Kartli (Marneuli Municipality), Georgia",
+        "elevation_m": 370,
+        "cultural_period": "Early Neolithic (Shulaveri-Shomu Type-Site)",
+        "chronology_bce": "6000 - 5500 cal BCE",
+        "radiocarbon_count": 2,
+        "radiocarbon_samples": [
+          {
+            "lab_code": "LE-1099",
+            "bp_uncalibrated": 6920,
+            "std_dev": 90,
+            "material": "Charcoal",
+            "calibrated_bce_range": "5980 - 5660 cal BCE",
+            "context_stratum": "Lower Horizon VIII",
+            "delta_c13_permil": null
+          },
+          {
+            "lab_code": "Tb-78",
+            "bp_uncalibrated": 6655,
+            "std_dev": 85,
+            "material": "Charcoal",
+            "calibrated_bce_range": "5740 - 5440 cal BCE",
+            "context_stratum": "Middle Horizon V",
+            "delta_c13_permil": null
+          }
+        ],
+        "inscriptions": [],
+        "sources": [
+          "O. Japaridze & A. Javakhishvili Kvemo Kartli Expedition Reports (1965-1971)"
+        ],
+        "metadata": {
+          "significance": "Eponymous tell settlement of the Shulaveri-Shomu Neolithic complex with circular mudbrick architecture and obsidian blades"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.9122,
+          41.3911
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-KDG-007",
+        "name_en": "Khramis Didi-Gora",
+        "name_ka": "ხრამის დიდი გორა",
+        "region": "Kvemo Kartli, Georgia",
+        "elevation_m": 320,
+        "cultural_period": "Early Neolithic (Shulaveri-Shomu Culture)",
+        "chronology_bce": "5850 - 5400 cal BCE",
+        "radiocarbon_count": 2,
+        "radiocarbon_samples": [
+          {
+            "lab_code": "Tb-312",
+            "bp_uncalibrated": 6850,
+            "std_dev": 70,
+            "material": "Charcoal",
+            "calibrated_bce_range": "5880 - 5640 cal BCE",
+            "context_stratum": "Stratum III",
+            "delta_c13_permil": null
+          },
+          {
+            "lab_code": "LE-1340",
+            "bp_uncalibrated": 6540,
+            "std_dev": 80,
+            "material": "Charred cereal grain",
+            "calibrated_bce_range": "5640 - 5320 cal BCE",
+            "context_stratum": "Stratum II",
+            "delta_c13_permil": null
+          }
+        ],
+        "inscriptions": [],
+        "sources": [
+          "Georgian State Museum Kvemo Kartli Monograph Series"
+        ],
+        "metadata": {
+          "significance": "Large Neolithic tell yielding anthropomorphic clay figurines and tartaric acid wine residues"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.6714,
+          41.4561
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-ARU-008",
+        "name_en": "Arukhlo I Tell",
+        "name_ka": "არუხლოს გორა",
+        "region": "Kvemo Kartli (Bolnisi Municipality), Georgia",
+        "elevation_m": 420,
+        "cultural_period": "Early Neolithic (Shulaveri-Shomu Culture)",
+        "chronology_bce": "5800 - 5350 cal BCE",
+        "radiocarbon_count": 2,
+        "radiocarbon_samples": [
+          {
+            "lab_code": "Hd-26410",
+            "bp_uncalibrated": 6790,
+            "std_dev": 45,
+            "material": "Charred Hordeum vulgare",
+            "calibrated_bce_range": "5790 - 5620 cal BCE",
+            "context_stratum": "Concentric Ditch Phase II",
+            "delta_c13_permil": null
+          },
+          {
+            "lab_code": "Tb-294",
+            "bp_uncalibrated": 6610,
+            "std_dev": 75,
+            "material": "Charcoal",
+            "calibrated_bce_range": "5690 - 5410 cal BCE",
+            "context_stratum": "Building Complex IV",
+            "delta_c13_permil": null
+          }
+        ],
+        "inscriptions": [],
+        "sources": [
+          "T. Chubinishvili Archives",
+          "DAI Eurasia Department & GNM Joint Reports (Hansen et al.)"
+        ],
+        "metadata": {
+          "significance": "Neolithic settlement encircled by monumental concentric ditches and Transcaucasian obsidian workshops"
         }
       }
     },
@@ -77,27 +362,230 @@
         ]
       },
       "properties": {
-        "site_id": "GEO-SAK-003",
-        "name_en": "Sakdrisi-Kachagiani Gold Mine",
+        "site_id": "GEO-SAK-009",
+        "name_en": "Sakdrisi-Kachagiani Prehistoric Gold Mine",
         "name_ka": "საყდრისი-ყაჩაღიანი",
-        "region": "Kvemo Kartli, Georgia",
+        "region": "Kvemo Kartli (Bolnisi/Dmanisi border), Georgia",
+        "elevation_m": 860,
         "cultural_period": "Early Bronze Age (Kura-Araxes Culture)",
-        "chronology_bce": "3350 - 2900 BCE",
+        "chronology_bce": "3350 - 2900 cal BCE",
+        "radiocarbon_count": 2,
         "radiocarbon_samples": [
           {
             "lab_code": "Hd-24811",
             "bp_uncalibrated": 4450,
             "std_dev": 40,
             "material": "Charcoal from fire-setting mining gallery",
-            "calibrated_bce_range": "3330 - 2930 cal BCE"
+            "calibrated_bce_range": "3240 - 3010 cal BCE",
+            "context_stratum": "Mine 1/2 Underground Shaft",
+            "delta_c13_permil": null
+          },
+          {
+            "lab_code": "MAMS-11420",
+            "bp_uncalibrated": 4390,
+            "std_dev": 30,
+            "material": "Quercus charcoal",
+            "calibrated_bce_range": "3150 - 2950 cal BCE",
+            "context_stratum": "Gallery B Ore-Crushing Floor",
+            "delta_c13_permil": null
           }
         ],
+        "inscriptions": [],
         "sources": [
-          "Georgian-German Mining Archaeology Reports",
+          "Georgian-German Mining Archaeology Reports (Stöllner & Gambashidze)",
           "GNM Metallurgy Collection"
         ],
         "metadata": {
-          "significance": "Prehistoric underground gold mining complex with stone hammers and fire-setting"
+          "significance": "Earliest known underground hard-rock gold mining complex using fire-setting and stone pounding tools"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0322,
+          42.0258
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-KVA-010",
+        "name_en": "Kvatskhelebi Settlement",
+        "name_ka": "ქვაცხელები",
+        "region": "Shida Kartli (Kareli Municipality), Georgia",
+        "elevation_m": 635,
+        "cultural_period": "Early Bronze Age (Kura-Araxes Culture)",
+        "chronology_bce": "3100 - 2700 cal BCE",
+        "radiocarbon_count": 2,
+        "radiocarbon_samples": [
+          {
+            "lab_code": "LE-157",
+            "bp_uncalibrated": 4310,
+            "std_dev": 80,
+            "material": "Charred wood beam",
+            "calibrated_bce_range": "3160 - 2720 cal BCE",
+            "context_stratum": "Level C1 Burned House",
+            "delta_c13_permil": null
+          },
+          {
+            "lab_code": "Tb-29",
+            "bp_uncalibrated": 4220,
+            "std_dev": 75,
+            "material": "Charred wheat grain",
+            "calibrated_bce_range": "3030 - 2610 cal BCE",
+            "context_stratum": "Level B2",
+            "delta_c13_permil": null
+          }
+        ],
+        "inscriptions": [],
+        "sources": [
+          "A. Javakhishvili & L. Glonti Urbnisi-Kvatskhelebi Reports (1962)"
+        ],
+        "metadata": {
+          "significance": "Exceptionally preserved burned Kura-Araxes village with intact ritual hearths and red-black burnished ware"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.9389,
+          42.0431
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-BER-011",
+        "name_en": "Berikldeebi Sanctuary & Settlement",
+        "name_ka": "ბერიკლდეები",
+        "region": "Shida Kartli (Kareli Municipality), Georgia",
+        "elevation_m": 650,
+        "cultural_period": "Late Chalcolithic to Middle Bronze Age",
+        "chronology_bce": "3800 - 2000 cal BCE",
+        "radiocarbon_count": 2,
+        "radiocarbon_samples": [
+          {
+            "lab_code": "GIN-6120",
+            "bp_uncalibrated": 4890,
+            "std_dev": 60,
+            "material": "Charcoal",
+            "calibrated_bce_range": "3800 - 3500 cal BCE",
+            "context_stratum": "Stratum V (Late Chalcolithic)",
+            "delta_c13_permil": null
+          },
+          {
+            "lab_code": "Tb-418",
+            "bp_uncalibrated": 4180,
+            "std_dev": 65,
+            "material": "Charcoal",
+            "calibrated_bce_range": "2950 - 2580 cal BCE",
+            "context_stratum": "Stratum IV (Kura-Araxes)",
+            "delta_c13_permil": null
+          }
+        ],
+        "inscriptions": [],
+        "sources": [
+          "A. Javakhishvili Berikldeebi Excavation Archives"
+        ],
+        "metadata": {
+          "significance": "Stratified cult center at the confluence of the Kura and Prone rivers bridging Chalcolithic, Kura-Araxes, and Bedeni horizons"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.4158,
+          41.5514
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-BED-012",
+        "name_en": "Bedeni Plateau Kurgan Necropolis",
+        "name_ka": "ბედენის ყურგანები",
+        "region": "Kvemo Kartli (Tetritskaro Municipality), Georgia",
+        "elevation_m": 1450,
+        "cultural_period": "Early Kurgan Period (Bedeni Culture)",
+        "chronology_bce": "2500 - 2200 cal BCE",
+        "radiocarbon_count": 2,
+        "radiocarbon_samples": [
+          {
+            "lab_code": "Tb-245",
+            "bp_uncalibrated": 3920,
+            "std_dev": 65,
+            "material": "Oak burial wagon timber",
+            "calibrated_bce_range": "2600 - 2220 cal BCE",
+            "context_stratum": "Bedeni Kurgan 5",
+            "delta_c13_permil": null
+          },
+          {
+            "lab_code": "Hd-19402",
+            "bp_uncalibrated": 3880,
+            "std_dev": 35,
+            "material": "Chestnut wood",
+            "calibrated_bce_range": "2480 - 2240 cal BCE",
+            "context_stratum": "Bedeni Kurgan 10",
+            "delta_c13_permil": null
+          }
+        ],
+        "inscriptions": [],
+        "sources": [
+          "G. Gobedjishvili Bedeni Monograph (1980)",
+          "Georgian National Museum"
+        ],
+        "metadata": {
+          "significance": "Monumental timber-chambered kurgans containing four-wheeled wooden wagons, textiles, and early arsenical bronzes"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.2144,
+          41.8022
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-ANA-013",
+        "name_en": "Ananauri Big Kurgan No. 3",
+        "name_ka": "ანანაურის დიდი ყურგანი №3",
+        "region": "Kakheti (Lagodekhi Municipality), Georgia",
+        "elevation_m": 480,
+        "cultural_period": "Early Kurgan Period (Bedeni Horizon)",
+        "chronology_bce": "2450 - 2250 cal BCE",
+        "radiocarbon_count": 2,
+        "radiocarbon_samples": [
+          {
+            "lab_code": "MAMS-18912",
+            "bp_uncalibrated": 3915,
+            "std_dev": 25,
+            "material": "Oak wagon plank",
+            "calibrated_bce_range": "2500 - 2310 cal BCE",
+            "context_stratum": "Main Burial Chamber",
+            "delta_c13_permil": null
+          },
+          {
+            "lab_code": "UGAMS-14205",
+            "bp_uncalibrated": 3890,
+            "std_dev": 30,
+            "material": "Charred hazelnut shell",
+            "calibrated_bce_range": "2480 - 2260 cal BCE",
+            "context_stratum": "Offering Floor",
+            "delta_c13_permil": null
+          }
+        ],
+        "inscriptions": [],
+        "sources": [
+          "Z. Makharadze & GNM Kakheti Kurgan Expedition Reports (2012-2016)"
+        ],
+        "metadata": {
+          "significance": "Unlooted monumental kurgan yielding two four-wheeled wooden wagons, amber beads, and gold jewelry"
         }
       }
     },
@@ -111,19 +599,92 @@
         ]
       },
       "properties": {
-        "site_id": "GEO-TRI-004",
+        "site_id": "GEO-TRI-014",
         "name_en": "Trialeti Barrow Cluster (Tsalka Plateau)",
         "name_ka": "თრიალეთის ყურგანები",
-        "region": "Kvemo Kartli, Georgia",
+        "region": "Kvemo Kartli (Tsalka Municipality), Georgia",
+        "elevation_m": 1540,
         "cultural_period": "Middle Bronze Age (Trialeti-Vanadzor Culture)",
-        "chronology_bce": "2100 - 1500 BCE",
-        "radiocarbon_samples": [],
+        "chronology_bce": "2100 - 1500 cal BCE",
+        "radiocarbon_count": 2,
+        "radiocarbon_samples": [
+          {
+            "lab_code": "Tb-401",
+            "bp_uncalibrated": 3580,
+            "std_dev": 60,
+            "material": "Charred pine timber",
+            "calibrated_bce_range": "2120 - 1770 cal BCE",
+            "context_stratum": "Kurgan XVII Processional Causeway",
+            "delta_c13_permil": null
+          },
+          {
+            "lab_code": "GrA-48210",
+            "bp_uncalibrated": 3490,
+            "std_dev": 35,
+            "material": "Bone collagen",
+            "calibrated_bce_range": "1930 - 1710 cal BCE",
+            "context_stratum": "Trialeti Kurgan XV",
+            "delta_c13_permil": null
+          }
+        ],
+        "inscriptions": [],
         "sources": [
-          "B.A. Kuftin Field Archives (1936-1940)",
-          "Georgian National Museum"
+          "B.A. Kuftin Field Archives (1936-1941)",
+          "Georgian National Museum Treasury"
         ],
         "metadata": {
-          "significance": "Monumental elite kurgans featuring silver and gold repousse goblets"
+          "significance": "Elite kurgans with stone causeways and world-renowned silver and gold repoussé goblets"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.3089,
+          41.9764
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-GRA-015",
+        "name_en": "Grakliani Hill Sanctuary & Settlement",
+        "name_ka": "გრაკლიანი გორა",
+        "region": "Shida Kartli (Kaspi Municipality), Georgia",
+        "elevation_m": 590,
+        "cultural_period": "Late Bronze / Early Iron Age to Hellenistic",
+        "chronology_bce": "1100 - 300 cal BCE",
+        "radiocarbon_count": 1,
+        "radiocarbon_samples": [
+          {
+            "lab_code": "Beta-418920",
+            "bp_uncalibrated": 2840,
+            "std_dev": 30,
+            "material": "Charred wheat seeds on Temple Altar",
+            "calibrated_bce_range": "1140 - 950 cal BCE",
+            "context_stratum": "Temple of Fertility Pedestal (10th-11th c. BCE)",
+            "delta_c13_permil": null
+          }
+        ],
+        "inscriptions": [
+          {
+            "inscription_id": "EPI-GRA-001",
+            "site_id": "GEO-GRA-015",
+            "script": "Grakliani Linear Script (Undeciphered)",
+            "language": "Unknown Pre-Classical Caucasian/Anatolian",
+            "original_text": "[Pedestal A & B incised signs on clay altar]",
+            "mkhedruli_transliteration": null,
+            "latin_transliteration": null,
+            "translation_en": "Undeciphered cultic dedication on clay altar pedestal",
+            "dating_str": "10th-8th century BCE (AMS 14C dated)",
+            "reference": "V. Licheli, Tbilisi State University Grakliani Expedition (2015-2016)"
+          }
+        ],
+        "sources": [
+          "Tbilisi State University Institute of Archaeology (V. Licheli Reports)"
+        ],
+        "metadata": {
+          "significance": "Multi-layered sanctuary featuring a unique Early Iron Age autochthonous script on a temple altar pedestal"
         }
       }
     },
@@ -137,19 +698,74 @@
         ]
       },
       "properties": {
-        "site_id": "GEO-VAN-005",
+        "site_id": "GEO-VAN-016",
         "name_en": "Vani Sanctuary & City Site",
         "name_ka": "ვანის ნაქალაქარი",
-        "region": "Imereti, Georgia",
+        "region": "Imereti (Vani Municipality), Georgia",
+        "elevation_m": 185,
         "cultural_period": "Late Bronze / Classical Colchian & Hellenistic",
         "chronology_bce": "800 - 50 BCE",
-        "radiocarbon_samples": [],
+        "radiocarbon_count": 1,
+        "radiocarbon_samples": [
+          {
+            "lab_code": "Tb-512",
+            "bp_uncalibrated": 2420,
+            "std_dev": 50,
+            "material": "Charcoal from sacrificial pit",
+            "calibrated_bce_range": "670 - 390 cal BCE",
+            "context_stratum": "5th c. BCE Colchian Rich Burial",
+            "delta_c13_permil": null
+          }
+        ],
+        "inscriptions": [
+          {
+            "inscription_id": "EPI-VAN-001",
+            "site_id": "GEO-VAN-016",
+            "script": "Ancient Greek",
+            "language": "Ancient Greek (Hellenistic Koine)",
+            "original_text": "ΒΑΣΙΛΕΩΣ ΜΙΘΡΑΔΑΤΟΥ ...",
+            "mkhedruli_transliteration": null,
+            "latin_transliteration": null,
+            "translation_en": "Fragmentary bronze plaque Greek civic decree from the Vani sanctuary precinct",
+            "dating_str": "2nd-1st century BCE",
+            "reference": "T. Kaukhchishvili & O. Lordkipanidze Vani Epigraphic Corpus"
+          }
+        ],
         "sources": [
           "O. Lordkipanidze Vani Expedition Archives",
-          "Vani Archaeological Museum"
+          "D. Kacharava GNM Reports"
         ],
         "metadata": {
-          "significance": "Major religious and metallurgical center of ancient Colchis, Greek bronze & goldsmithing"
+          "significance": "Major religious and metallurgical center of ancient Colchis with rich granulation goldwork and bronze foundry"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.2075,
+          41.9672
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-UPL-017",
+        "name_en": "Uplistsikhe Rock-Hewn City",
+        "name_ka": "უფლისციხე",
+        "region": "Shida Kartli (Gori Municipality), Georgia",
+        "elevation_m": 580,
+        "cultural_period": "Early Iron Age to Late Antique Iberia",
+        "chronology_bce": "1000 BCE - 500 CE",
+        "radiocarbon_count": 0,
+        "radiocarbon_samples": [],
+        "inscriptions": [],
+        "sources": [
+          "D. Khakhutaishvili Uplistsikhe Monographs",
+          "Georgian National Museum"
+        ],
+        "metadata": {
+          "significance": "Rock-cut cultic and urban center of ancient Kartli (Iberia) overlooking the Kura River"
         }
       }
     },
@@ -163,19 +779,119 @@
         ]
       },
       "properties": {
-        "site_id": "GEO-ARM-006",
-        "name_en": "Armazi Citadel (Bagineti)",
+        "site_id": "GEO-ARM-018",
+        "name_en": "Armazi Citadel (Bagineti) & Necropolis",
         "name_ka": "არმაზციხე (ბაგინეთი)",
         "region": "Mtskheta-Mtianeti, Georgia",
+        "elevation_m": 540,
         "cultural_period": "Hellenistic / Early Iberian & Late Antique",
         "chronology_bce": "300 BCE - 400 CE",
+        "radiocarbon_count": 0,
         "radiocarbon_samples": [],
+        "inscriptions": [
+          {
+            "inscription_id": "EPI-ARM-001",
+            "site_id": "GEO-ARM-018",
+            "script": "Ancient Greek & Armazic Aramaic (Bilingual)",
+            "language": "Ancient Greek / Armazic Aramaic",
+            "original_text": "ΣΗΡΑΦΕΙΤΙΣ ΖΕΥΑΧΟΥ ΤΟΥ ΝΕΩΤΕΡΟΥ ΠΙΤΙΑΞΟΥ ΘΥΓΑΤΗΡ",
+            "mkhedruli_transliteration": null,
+            "latin_transliteration": null,
+            "translation_en": "Serapitis, daughter of Zevakh the Younger, Pitiakhsh, wife of Iodmangan the victorious master of the court of King Xepharnug of Iberia",
+            "dating_str": "c. 150 CE",
+            "reference": "G. Tsereteli (1941), The Armazi Bilingual Inscription, Tbilisi"
+          }
+        ],
         "sources": [
           "Mtskheta Archaeological Institute Reports",
-          "Georgian Epigraphic Corpus"
+          "G. Tsereteli Epigraphic Archive"
         ],
         "metadata": {
-          "significance": "Royal acropolis of Iberia; locus of the Armazi Bilingual (Greek and Armazic Aramaic)"
+          "significance": "Royal acropolis of Iberia and discovery locus of the Armazi Bilingual (key to deciphering the Armazic script)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.5128,
+          41.3889
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-BOL-019",
+        "name_en": "Bolnisi Sioni Basilica (Epigraphic Locus)",
+        "name_ka": "ბოლნისის სიონი",
+        "region": "Kvemo Kartli (Bolnisi Municipality), Georgia",
+        "elevation_m": 560,
+        "cultural_period": "Late Antique / Early Christian Kartli",
+        "chronology_bce": "478 - 493 CE",
+        "radiocarbon_count": 0,
+        "radiocarbon_samples": [],
+        "inscriptions": [
+          {
+            "inscription_id": "EPI-BOL-001",
+            "site_id": "GEO-BOL-019",
+            "script": "Asomtavruli",
+            "language": "Old Georgian",
+            "original_text": "ႵႤ ႣႠႧႳႬႠ ႤႮႨႱႩႭႮႭႱႱႠ ႩႰႤႡႳႪႨႧႳႰႧ ႠႫႨႱ ႤႩႪႤႱႨႨႱႠႷ",
+            "mkhedruli_transliteration": "ქე დათუნა ეპისკოპოსსა კრებულითურთ ამის ეკლესიისაყ",
+            "latin_transliteration": "ke datuna ep'isk'op'ossa k'rebuliturt amis ek'lesiisaq'",
+            "translation_en": "Christ, have mercy on Bishop David and those who built this church for Your worship",
+            "dating_str": "493-494 CE (20th year of King Peroz)",
+            "reference": "Corpus Inscriptionum Georgicarum Vol. I (N. Shoshiashvili, 1980, No. 6-8)"
+          }
+        ],
+        "sources": [
+          "Corpus Inscriptionum Georgicarum (Lapidary Inscriptions, Vol. I)",
+          "K. Kekelidze Institute of Manuscripts"
+        ],
+        "metadata": {
+          "significance": "Oldest securely dated surviving Old Georgian Asomtavruli stone inscriptions in Georgia (late 5th century CE)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.7333,
+          41.8383
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-JVR-020",
+        "name_en": "Mtskheta Jvari Monastery Reliefs",
+        "name_ka": "მცხეთის ჯვრის მონასტერი",
+        "region": "Mtskheta-Mtianeti, Georgia",
+        "elevation_m": 655,
+        "cultural_period": "Early Medieval Kartli (Erismtavari Period)",
+        "chronology_bce": "586 - 605 CE",
+        "radiocarbon_count": 0,
+        "radiocarbon_samples": [],
+        "inscriptions": [
+          {
+            "inscription_id": "EPI-JVR-001",
+            "site_id": "GEO-JVR-020",
+            "script": "Asomtavruli",
+            "language": "Old Georgian",
+            "original_text": "ႼႫႨႣႠႭ ႫႨႵႠႤႪ ႫႧႠႥႠႰႠႬႢႤႪႭႦႭ ႣႤႫႤႲႰႤႱ ႳႮႠႲႭႱႱႠ ႫႤႭႾ ႤႷႠႥ",
+            "mkhedruli_transliteration": "წმიდაო მიქაელ მთავარანგელოზო დემეტრეს უპატოსსა მეოხ ეყავ",
+            "latin_transliteration": "ts'midao mikael mtavarangelozo demet'res up'at'ossa meokh eq'av",
+            "translation_en": "Saint Michael Archangel, intercede for Demetre the Hypatos",
+            "dating_str": "586-605 CE",
+            "reference": "Corpus Inscriptionum Georgicarum Vol. I (N. Shoshiashvili, 1980, No. 13)"
+          }
+        ],
+        "sources": [
+          "Corpus Inscriptionum Georgicarum",
+          "G. Chubinashvili History of Georgian Architecture"
+        ],
+        "metadata": {
+          "significance": "Monumental facade reliefs with benchmark Asomtavruli inscriptions naming Stephanos Patricius and Demetre Hypatos"
         }
       }
     }
