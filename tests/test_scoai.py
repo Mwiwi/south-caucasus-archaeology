@@ -7,6 +7,8 @@ from pathlib import Path
 import tempfile
 import unittest
 
+from benchmarks.caucasus_arch_bench import NOISY_OCR_EXCERPT_KDG, run_caucasus_arch_benchmark
+from scoai.agent_workflow import GeminiArchivalAgent
 from scoai.archival_parser import (
     build_gemini_extraction_payload,
     parse_archival_report_excerpt,
@@ -30,6 +32,11 @@ from scoai.radiocarbon import (
     calibrate_2sigma_bce,
     normalize_lab_code,
     parse_archival_radiocarbon_line,
+)
+from scoai.schema import RadiocarbonSample
+from scoai.stratigraphy import (
+    verify_stratigraphic_superposition,
+    ward_wilson_chi2_test,
 )
 
 
@@ -75,9 +82,41 @@ class TestEpigraphyEngine(unittest.TestCase):
         self.assertEqual(latin, "sakartvelo")
 
     def test_ejective_distinctions_in_scholarly_latin(self) -> None:
-        # კ (k') vs ქ (k), წ (ts') vs ც (ts), ყ (q')
         self.assertEqual(transliterate_georgian_to_latin("კოლხეთი"), "k'olkheti")
         self.assertEqual(transliterate_georgian_to_latin("საყდრისი"), "saq'drisi")
+
+
+class TestStratigraphyAndAgentWorkflow(unittest.TestCase):
+    def test_ward_wilson_chi2_coeval_vs_outlier(self) -> None:
+        s1 = RadiocarbonSample("MAMS-18912", 3915, 25, "Oak", context_stratum="Stratum II")
+        s2 = RadiocarbonSample("UGAMS-14205", 3890, 30, "Hazelnut", context_stratum="Stratum II")
+        res_coeval = ward_wilson_chi2_test([s1, s2])
+        self.assertTrue(res_coeval.is_coeval_at_95pct)
+        self.assertLess(res_coeval.t_statistic, 3.841)
+
+        s_outlier = RadiocarbonSample("Tb-999", 2900, 35, "Charcoal", context_stratum="Stratum III")
+        res_outlier = ward_wilson_chi2_test([s1, s2, s_outlier])
+        self.assertFalse(res_outlier.is_coeval_at_95pct)
+        self.assertIn("Tb-999", res_outlier.outlier_lab_codes)
+
+        anomalies = verify_stratigraphic_superposition([s1, s_outlier])
+        self.assertEqual(len(anomalies), 1)
+        self.assertEqual(anomalies[0].lower_lab_code, "Tb-999")
+
+    def test_agentic_self_correction_loop_repairs_ocr_inversion(self) -> None:
+        agent = GeminiArchivalAgent(model_name="gemini-4-argon")
+        wf_result = agent.run_verified_extraction(NOISY_OCR_EXCERPT_KDG)
+        self.assertTrue(wf_result.converged)
+        self.assertEqual(len(wf_result.initial_anomalies), 1)
+        self.assertEqual(len(wf_result.final_anomalies), 0)
+        self.assertEqual(len(wf_result.turns), 3)
+        tb312 = next(s for s in wf_result.final_record.radiocarbon_samples if s.lab_code == "Tb-312")
+        self.assertEqual(tb312.bp_uncalibrated, 6850)
+
+    def test_caucasus_arch_bench_full_suite(self) -> None:
+        results = run_caucasus_arch_benchmark(output_json_path=None, verbose=False)
+        self.assertEqual(len(results), 5)
+        self.assertTrue(all(r.passed for r in results))
 
 
 class TestArchivalParserAndCatalog(unittest.TestCase):

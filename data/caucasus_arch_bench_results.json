@@ -1,0 +1,74 @@
+{
+  "benchmark": "CaucasusArch-Bench v0.2.0",
+  "target_model": "gemini-4-argon",
+  "total_tasks": 5,
+  "passed_tasks": 5,
+  "pass_rate": 1.0,
+  "tasks": [
+    {
+      "task_id": "BENCH-C14-OCR-01",
+      "category": "Agentic Stratigraphic Self-Correction",
+      "description": "Detect & repair OCR digit confusion (3850 -> 6850 BP) violating Law of Superposition in Stratum III",
+      "passed": true,
+      "metrics": {
+        "initial_t_statistic": 640.363,
+        "initial_superposition_z": 25.31,
+        "repaired_samples": [
+          "Tb-312: 3850 BP -> 6850 BP (5880 - 5640 cal BCE)"
+        ],
+        "final_t_statistic": 8.504,
+        "agent_turns": 3
+      }
+    },
+    {
+      "task_id": "BENCH-STRAT-ANA-02",
+      "category": "Chronometric Phase Pooling (Ward & Wilson 1978)",
+      "description": "Verify single-event burial wagon construction coevality for Ananauri Big Kurgan No. 3",
+      "passed": true,
+      "metrics": {
+        "pooled_mean_bp": 3904.8,
+        "pooled_std_bp": 19.2,
+        "pooled_2sigma_cal": "2480 - 2310 cal BCE",
+        "t_statistic": 0.41,
+        "critical_005": 3.841,
+        "is_coeval_95pct": true
+      }
+    },
+    {
+      "task_id": "BENCH-EPI-BOL-03",
+      "category": "Ancient Epigraphy (Asomtavruli -> Kartvelological Latin)",
+      "description": "Decode 5th-century Bolnisi Sioni Asomtavruli inscription preserving ejective stops (p', k', q')",
+      "passed": true,
+      "metrics": {
+        "source_script": "Asomtavruli (U+10A0..U+10C5)",
+        "mkhedruli": "ქე დათუნა ეპისკოპოსსა კრებულითურთ ამის ეკლესიისაყ",
+        "scholarly_latin": "ke datuna ep'isk'op'ossa k'rebuliturt amis ek'lesiisaq'"
+      }
+    },
+    {
+      "task_id": "BENCH-EPI-JVR-04",
+      "category": "Ecclesiastical Script Roundtrip (Asomtavruli/Nuskhuri)",
+      "description": "Convert Mtskheta Jvari relief of Demetre the Hypatos across Asomtavruli, Nuskhuri, and Mkhedruli",
+      "passed": true,
+      "metrics": {
+        "nuskhuri_sample": "ⴜⴋⴈⴃⴀⴍ ⴋⴈⴕⴀⴄⴊ ⴋⴇⴀⴅⴀⴐⴀⴌⴂⴄⴊⴍⴆⴍ",
+        "latin_excerpt": "ts'midao mikael mtavarangelozo demet'res up'at'ossa meokh eq'av"
+      }
+    },
+    {
+      "task_id": "BENCH-GEO-IMR-05",
+      "category": "Cross-Lingual Archival Parsing & Geodesy",
+      "description": "Extract Georgian DMS coordinates, normalize თბ-29 -> Tb-29, and verify Neolithic horizon coevality",
+      "passed": true,
+      "metrics": {
+        "site_id": "GEO-IMR-021",
+        "decimal_wgs84": [
+          41.47,
+          44.8125
+        ],
+        "ward_wilson_t": 1.991,
+        "pooled_cal_bce": "5740 - 5550 cal BCE"
+      }
+    }
+  ]
+}

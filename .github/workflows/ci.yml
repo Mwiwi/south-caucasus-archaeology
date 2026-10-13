@@ -21,5 +21,8 @@ jobs:
       - name: Run unit test suite
         run: python3 -m unittest discover -s tests -v
 
+      - name: Run CaucasusArch-Bench evaluation suite
+        run: PYTHONPATH=. python3 benchmarks/caucasus_arch_bench.py
+
       - name: Verify dataset generation pipeline
         run: python3 pipeline.py --quiet
