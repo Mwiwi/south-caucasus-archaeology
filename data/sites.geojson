@@ -1,0 +1,183 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "project": "South Caucasus Open Archaeology Initiative (SCOAI)",
+    "author": "Willi Ker",
+    "license": "CC-BY-4.0"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.2036,
+          41.3322
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-DMN-001",
+        "name_en": "Dmanisi Hominin Site",
+        "name_ka": "დმანისი",
+        "region": "Kvemo Kartli, Georgia",
+        "cultural_period": "Lower Paleolithic (Oldowan / Mode 1)",
+        "chronology_bce": "1,850,000 - 1,770,000 BP",
+        "radiocarbon_samples": [],
+        "sources": [
+          "Georgian National Museum Archives",
+          "GNAS Reports"
+        ],
+        "metadata": {
+          "significance": "Earliest securely dated hominin fossils outside Africa (Homo georgicus)",
+          "dating_method": "40Ar/39Ar and paleomagnetism (Matuyama-Olduvai)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.8194,
+          41.4831
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-GAD-002",
+        "name_en": "Gadachrili Gora",
+        "name_ka": "გადაჭრილი გორა",
+        "region": "Kvemo Kartli, Georgia",
+        "cultural_period": "Early Neolithic (Shulaveri-Shomu Culture)",
+        "chronology_bce": "6000 - 5800 BCE",
+        "radiocarbon_samples": [
+          {
+            "lab_code": "RTD-7814",
+            "bp_uncalibrated": 7065,
+            "std_dev": 35,
+            "material": "Charred cereal grain (Triticum)",
+            "calibrated_bce_range": "6010 - 5880 cal BCE"
+          }
+        ],
+        "sources": [
+          "Georgian National Museum Archives",
+          "PNAS 2017 Tartaric Acid Residue Catalog"
+        ],
+        "metadata": {
+          "significance": "Earliest biomolecular evidence of viniculture and ceramic wine jars (qvevri)"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.4178,
+          41.4367
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-SAK-003",
+        "name_en": "Sakdrisi-Kachagiani Gold Mine",
+        "name_ka": "საყდრისი-ყაჩაღიანი",
+        "region": "Kvemo Kartli, Georgia",
+        "cultural_period": "Early Bronze Age (Kura-Araxes Culture)",
+        "chronology_bce": "3350 - 2900 BCE",
+        "radiocarbon_samples": [
+          {
+            "lab_code": "Hd-24811",
+            "bp_uncalibrated": 4450,
+            "std_dev": 40,
+            "material": "Charcoal from fire-setting mining gallery",
+            "calibrated_bce_range": "3330 - 2930 cal BCE"
+          }
+        ],
+        "sources": [
+          "Georgian-German Mining Archaeology Reports",
+          "GNM Metallurgy Collection"
+        ],
+        "metadata": {
+          "significance": "Prehistoric underground gold mining complex with stone hammers and fire-setting"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.0891,
+          41.5983
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-TRI-004",
+        "name_en": "Trialeti Barrow Cluster (Tsalka Plateau)",
+        "name_ka": "თრიალეთის ყურგანები",
+        "region": "Kvemo Kartli, Georgia",
+        "cultural_period": "Middle Bronze Age (Trialeti-Vanadzor Culture)",
+        "chronology_bce": "2100 - 1500 BCE",
+        "radiocarbon_samples": [],
+        "sources": [
+          "B.A. Kuftin Field Archives (1936-1940)",
+          "Georgian National Museum"
+        ],
+        "metadata": {
+          "significance": "Monumental elite kurgans featuring silver and gold repousse goblets"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.5028,
+          42.0856
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-VAN-005",
+        "name_en": "Vani Sanctuary & City Site",
+        "name_ka": "ვანის ნაქალაქარი",
+        "region": "Imereti, Georgia",
+        "cultural_period": "Late Bronze / Classical Colchian & Hellenistic",
+        "chronology_bce": "800 - 50 BCE",
+        "radiocarbon_samples": [],
+        "sources": [
+          "O. Lordkipanidze Vani Expedition Archives",
+          "Vani Archaeological Museum"
+        ],
+        "metadata": {
+          "significance": "Major religious and metallurgical center of ancient Colchis, Greek bronze & goldsmithing"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.7219,
+          41.8364
+        ]
+      },
+      "properties": {
+        "site_id": "GEO-ARM-006",
+        "name_en": "Armazi Citadel (Bagineti)",
+        "name_ka": "არმაზციხე (ბაგინეთი)",
+        "region": "Mtskheta-Mtianeti, Georgia",
+        "cultural_period": "Hellenistic / Early Iberian & Late Antique",
+        "chronology_bce": "300 BCE - 400 CE",
+        "radiocarbon_samples": [],
+        "sources": [
+          "Mtskheta Archaeological Institute Reports",
+          "Georgian Epigraphic Corpus"
+        ],
+        "metadata": {
+          "significance": "Royal acropolis of Iberia; locus of the Armazi Bilingual (Greek and Armazic Aramaic)"
+        }
+      }
+    }
+  ]
+}
