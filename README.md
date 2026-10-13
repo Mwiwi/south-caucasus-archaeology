@@ -2,10 +2,11 @@
 
 [![SCOAI Validation & Tests](https://github.com/Mwiwi/south-caucasus-archaeology/actions/workflows/ci.yml/badge.svg)](https://github.com/Mwiwi/south-caucasus-archaeology/actions/workflows/ci.yml)
 [![Benchmark: CaucasusArch-Bench](https://img.shields.io/badge/CaucasusArch--Bench-5%2F5_Passed-brightgreen.svg)](benchmarks/caucasus_arch_bench.py)
+[![ORCID: 0009-0007-1720-0198](https://img.shields.io/badge/ORCID-0009--0007--1720--0198-A6CE39.svg)](https://orcid.org/0009-0007-1720-0198)
 [![License: MIT](https://img.shields.io/badge/Code_License-MIT-blue.svg)](LICENSE)
 [![Dataset License: CC BY 4.0](https://img.shields.io/badge/Data_License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-**Lead Researcher:** Willi Ker  
+**Lead Researcher:** Willi Ker ([ORCID: 0009-0007-1720-0198](https://orcid.org/0009-0007-1720-0198))  
 **Affiliation:** Independent Researcher — South Caucasus Open Archaeology Initiative (Tbilisi, Georgia)  
 **Research Area:** Computational Archaeology, Cultural Heritage Preservation, Spatial-Temporal Data Synthesis
 

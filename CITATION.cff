@@ -5,6 +5,7 @@ type: software
 authors:
   - given-names: Willi
     family-names: Ker
+    orcid: "https://orcid.org/0009-0007-1720-0198"
     affiliation: "South Caucasus Open Archaeology Initiative (Tbilisi, Georgia)"
 repository-code: "https://github.com/Mwiwi/south-caucasus-archaeology"
 version: 0.2.0
@@ -13,7 +14,6 @@ license: MIT
 keywords:
   - computational-archaeology
   - south-caucasus
-  - georgia
   - radiocarbon-calibration
   - xronos
   - pelagios
