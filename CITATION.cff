@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: "South Caucasus Open Archaeology Initiative (SCOAI): Radiocarbon Normalization, Epigraphy, and Spatial Dataset Toolkit"
+message: "If you use this software or dataset in your research, please cite it using the metadata from this file."
+type: software
+authors:
+  - given-names: Willi
+    family-names: Ker
+    affiliation: "South Caucasus Open Archaeology Initiative (Tbilisi, Georgia)"
+repository-code: "https://github.com/Mwiwi/south-caucasus-archaeology"
+version: 0.2.0
+date-released: "2026-10-14"
+license: MIT
+keywords:
+  - computational-archaeology
+  - south-caucasus
+  - georgia
+  - radiocarbon-calibration
+  - xronos
+  - pelagios
+  - asomtavruli-epigraphy
+  - geojson

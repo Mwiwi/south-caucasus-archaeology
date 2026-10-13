@@ -1,5 +1,9 @@
 # South Caucasus Open Archaeology Initiative (SCOAI)
 
+[![SCOAI Validation & Tests](https://github.com/Mwiwi/south-caucasus-archaeology/actions/workflows/ci.yml/badge.svg)](https://github.com/Mwiwi/south-caucasus-archaeology/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/Code_License-MIT-blue.svg)](LICENSE)
+[![Dataset License: CC BY 4.0](https://img.shields.io/badge/Data_License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 **Lead Researcher:** Willi Ker  
 **Affiliation:** Independent Researcher — South Caucasus Open Archaeology Initiative (Tbilisi, Georgia)  
 **Research Area:** Computational Archaeology, Cultural Heritage Preservation, Spatial-Temporal Data Synthesis
